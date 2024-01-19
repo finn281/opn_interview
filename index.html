@@ -1,0 +1,460 @@
+<html>
+
+    <head>
+
+    </head>
+    
+<style>
+      @import url("https://use.typekit.net/ani8nxz.css");
+    
+    html {
+  scroll-behavior: smooth;
+}
+    
+    .antina{
+       /*font-family: "Antina", cursive;*/
+        font-family: "club-lithographer";
+    font-size: 75px;
+        max-height: 20vh;
+        margin: auto;
+        padding: 20px;
+        color: black;
+
+        text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px white, 0 0 30px white, 0 0 40px white, 0 0 55px white, 0 0 75px white;
+        margin: auto;
+    }
+    
+    a{
+         font-family: "club-lithographer";
+        font-size: 40px;
+        margin: auto;
+        padding: 40px;
+        color: black;
+        text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px white, 0 0 30px white, 0 0 40px white, 0 0 55px white, 0 0 75px white;
+        text-decoration: none;
+        
+        
+    }
+    
+    .footer {
+
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   min-width: 20%;
+   background: rgba(204, 204, 204, 0.4);
+        opacity: 60%;
+   color: white;
+   text-align: left;
+}
+    
+    p {
+        font-family: "parabolica", mono;
+        font-size: 16px;
+        margin: 0px;
+        padding: 0px;
+        
+    }
+    
+    .black {
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        /*color: lavender;*/
+        margin: 0px;
+        padding: 10px;
+        }
+    
+    #text {
+        width: 30vw;
+        max-height: 60vh;
+        background: rgba(204, 204, 204, 0.5);
+        margin: 20px;
+        padding: 20px;
+        border: 2px black solid;
+        border-radius: 10%;
+        text-align: center;
+         line-height:18px;
+        background-image: repeating-linear-gradient(rgba(236, 236, 236, 0.1), rgba(236, 236, 236, 0.1) 18px, rgba(255, 255, 255, 0.2) 18px, rgba(255, 255, 255, 0.2) 36px);
+        overflow-y: auto;
+        
+    }
+    
+    #text2 {
+        margin: auto;
+        margin-top: 10vh;
+        
+        width: 70vw;
+        height: 65vh;
+        background: rgba(204, 204, 204, 0.7);
+        padding: 30px;
+        border: 2px black solid;
+        border-radius: 3%;
+        text-align: center;
+        overflow-y: hide;
+        
+    }
+    
+    #alternatingBg{
+        line-height:18px;
+        background-image: repeating-linear-gradient(rgba(236, 236, 236, 0.1), rgba(236, 236, 236, 0.1) 18px, rgba(255, 255, 255, 0.2) 18px, rgba(255, 255, 255, 0.2) 36px);
+    }
+    
+     #gallery {
+        margin: auto;
+        margin-top: 10vh;
+        
+        width: 70vw;
+        height: 65vh;
+        background: rgba(204, 204, 204, 0.7);
+        padding: 30px;
+        border: 2px black solid;
+        border-radius: 3%;
+        text-align: center;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+    
+    
+    
+    
+    .scroll-container {
+        margin: auto;
+        width: 60vw;
+        height: 65vh;
+        overflow-y: hidden;
+        overflow-x:hidden;
+      
+        white-space: nowrap;
+        padding: 10px;
+    }
+    
+    #img2{
+        width: 60vw;
+        height: 65vh;
+        position: absolute;
+        left: 100%;
+        top: 0%;
+    }
+    
+    .ofScroll {
+        overflow-y: scroll;
+    }
+    
+    .noBorder {
+        border: 0;
+    }
+    
+    
+    
+    body{
+        width: 90%;
+        height: 100%;
+        /*background-image: url("MOPN-Back-cover-2500px_2500_2.png");
+        background-size: cover;
+        background-repeat: no-repeat;*/
+        overflow-y: scroll;
+        overflow-x: hidden;
+        cursor: url(cursor.cur);
+        }
+    
+    #div1{
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0%;
+        position: absolute;
+          background-image: url("MOPN-Back-cover-2500px_2500_2.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 0;
+        margin: 0px;
+        padding: 0px;
+        border: 0px;
+    }
+    
+    #div2{
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 100%;
+        position: absolute;
+        background-image: url("2.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 0;
+        margin: 0px;
+        padding: 0px;
+        border: 0px;
+    }
+    
+    #div3{
+       width: 100%;
+        height: 100%;
+        left: 100%;
+        top: 100%;
+        position: absolute;
+        background-image: url("3.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 0;
+        margin: 0px;
+        padding: 0px;
+        border: 0px; 
+        
+    }
+    
+    #div4{
+       width: 100%;
+        height: 100%;
+        left: 100%;
+        top: 0%;
+        position: absolute;
+        background-image: url(Oneohtrix_Point_Never_interview.webp);
+        z-index: 0;
+        margin: 0px;
+        padding: 0px;
+        border: 0px; 
+        
+    }
+    
+    
+    .topRight{
+        position: absolute;
+        top: 40vh;
+        right: 20px;
+    }
+    
+    details {
+  font:
+    16px "Open Sans",
+    Calibri,
+    sans-serif;
+}
+    
+    details > summary {
+        
+        list-style: none;
+    }
+    
+    #player{
+        
+       width: 30vw;
+        max-height: 50vh;
+    }
+    
+    
+    
+    .kissick{
+        
+        text-align: left;
+        /*background-color: rgba(207,74,40,0.2);*/
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 0.3)0%,rgba(207,74,40,0.0)30%);
+        background-size: 100%, 10%;
+        line-height:18px;
+    }
+    
+    .kHighlight{
+        background-image: linear-gradient(to right, rgba(207,74,40,0.5)0%,rgba(207,74,40,0.0)30%);
+    }
+    
+    .lopatin {
+        text-align: right;
+        /*background-image: linear-gradient(to left, rgba(207,74,40,0.5)0%,rgba(207,74,40,0.0)30%);*/
+        line-height:18px;
+        background-image: repeating-linear-gradient(rgba(236, 236, 236, 0.1), rgba(236, 236, 236, 0.1) 18px, rgba(255, 255, 255, 0.2) 18px, rgba(255, 255, 255, 0.2) 36px);
+    }
+    
+    .contrast{
+       background-image: linear-gradient(rgba(204, 204, 204, 0.4), rgba(204, 204, 204, 0));
+    }
+    
+    /* SCROLLBAR*/
+
+    ::-webkit-scrollbar {
+    width: 20px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        /*background-color: darkgreen;*/
+        /*background: blue;*/
+        background-image: url(scrollbar.png);
+        background-size: cover;
+    }
+ 
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+    background-image: radial-gradient(yellow,red); 
+        border-radius: 0%;
+    }
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-image: repeating-radial-gradient(red,purple);
+}
+    
+.custom-cursor {
+  cursor: url(cursor.png), auto;
+}    
+
+    /*OIUHOIhOIHOIHOIH*/
+    
+     div::-webkit-scrollbar {
+    width: 5px;
+    }
+
+    /* Track */
+    div::-webkit-scrollbar-track {
+        /*background-color: darkgreen;*/
+        /*background: blue;*/
+        background-color: gainsboro;
+        background-size: cover;
+    }
+    
+        /* Handle */
+    div::-webkit-scrollbar-thumb {
+    background-image: radial-gradient(red); 
+        border-radius: 0%;
+    
+</style>
+
+<body>
+    
+    <div id="div1">
+        
+    <div>
+        <p class="antina">Slanted and Re-enchanted: Magic Oneohtrix Point Never</p>
+    </div>
+    
+    <p id="text" class="ofScroll">
+        <em>Interview by Dean Kissick via Flash Art <br>
+            27 January 2021, 9:00 am CET <br>
+        </em>
+        <br>
+        
+        Hypnagogic pop star Daniel Lopatin, thirty-eight, who performs as Oneohtrix Point Never, has just released his self-titled record Magic Oneohtrix Point Never. It’s his ninth, or twelfth, or fourteenth album, depending on how you count them, and ties up some of the strings of his career so far. An ode to riding the radio waves and making tapes growing up, Magic Oneohtrix Point Never was made this summer in Queens, in the post-Ballardian skyscraper he calls home, during New York’s vague stages of lockdown. Its first video, for his vocoder duet with Caroline Polachek, “Long Road Home,” was directed by writer Charlie Fox with puppeteer Emily Schubert and features a devil having sex with a bat in a dark, gloomy interior: a perfect summation of 2020. This record makes me disassociate. Listen to this record for too long and you’ll fall into a trance; nonetheless, Lopatin wants you to listen to it all the way through. He recently scored the soundtrack for Josh and Benny Safdie’s anxious-euphoric New York symphony Uncut Gems (2019) and wrote some songs for The Weeknd’s album too. They performed together on Saturday Night Live the same week as Elizabeth Warren. Lopatin staged his previous album, Age Of (2018), as an experimental vapor-baroque opera at the Park Avenue Armory. This new record, however, is for casting spells on yourself on your own, walking through the dirty streets, looking at pixelated shadows cast by LED streetlamps.</p>
+        
+        <!-- <details class="topRight"><summary style="float:right" ><img src="click2.gif" width="100px"></summary>
+        <iframe id="player" style="border-radius:12px" src="https://open.spotify.com/embed/artist/2wPDbhaGXCqROrVmwDdCrK?utm_source=generator&theme=0" width="50%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </details> -->
+        
+        <br>
+        <br>
+       
+        <a href="#div2">Read interview!</a>
+        
+        
+        
+       
+    </div>
+     
+    
+    
+    <div id="div2">
+    
+        <div class="ofScroll" id="text2">
+            
+        <p class="kissick">
+            <b>Dean Kissick: </b>
+            <br>
+            What were you thinking about when you made this record?</p>
+            <p class="lopatin">
+<b>Oneohtrix Point Never:</b> <br>For a long time I toyed with the idea of doing an eponymous record, a self-titled record, and I always thought it was inappropriate, because for me to do one, I want to do something that encapsulates the various musical strains I’ve been interested in, and there’s been a lot. So I was building up to this over the course of a decade more or less. Artists tend to think of a self-titled record as their best record. And I do think that about this record, but really what I wanted to do was capture all of the strains and deal with the name itself, Oneohtrix Point Never; the first tape I put out in 2007 on my friend’s tape label Deception Island was called Magic Oneohtrix Point Never, after a soft rock radio station in Boston called Magic 106.7. So I started really picking up steam on this thing during the quarantine because I was listening to music a lot, but in particular, I was listening to a lot of Elara radio and was really impressed by it.
+
+And it was also a reminder for me of the roots of the OPN project, of a latent interest in the aleatory experience of listening, that it’s active, that it’s not just… For me anyway, growing up spinning the dials and creating radio mixtapes was a way to be in the world but still have boundaries and have a distance from it. That was a very nice, functional way of being an introvert for me. I loved the radio for that reason.</p>
+            
+            
+<p class="kissick">
+<b>DK:</b> <br> Let’s talk briefly about Elara.
+            </p>
+   
+<p class=lopatin>            
+<b>OPN:</b> 
+    <br> Yeah, sure. So Elara is a production company Josh and Benny Safdie started, but right when New York got locked down — that’s when I remember the first Elara streaming radio broadcast. And it felt like a very New York moment, because I would see these things get posted and think, “Oh, that’s Mike Billz [writer and director Michael M. Bilandic].” And actually Mike’s mixes were the mixes that stuck out the most, and in some weird way inspired me the most; not in style, but they just reminded me that I could do what I want. Because he was doing these happy hardcore, Looney Tunes happy hardcore mixes. It was just absolutely batshit crazy.
+I remember, as an aside, I performed at the Armory with Anohni for her tour for Hopelessness. And Usher was in the audience. And I met him afterwards because he had some questions about what I was doing. And he goes, “Yeah, you know people think I’m an R&B guy, which I am, pop guy, but I like this kind of shit.” That’s what he said.
+
+And I go, “Well, I would imagine you’re like a musical athlete par excellence; at some point you need a bigger dose, you need a harder hit.” And so I think sometimes when I’m attracted to very extreme music, it’s simply because I just require a harder dose.
+
+So yeah, Elara’s happening, I’m listening all the time, I’m feeling kind of a nice connection to the community that emerges from it, and I end up making a mix myself for it called “Depressive Danny’s” — whatever I called it — “Witches Borscht,” I think. And that was a nice little rehearsal for the album, because I just started gaining confidence. So the whole thing started synergizing. I was thinking about the radio, I was thinking about Magic Oneohtrix Point Never. I was listening deeply again, I was hearing people wild out and do whatever the fuck they wanted. I made a mix that felt like a diary entry of my mood there. And that was it. That was enough to get to work, I guess. And so I started demoing right there in that room next to my bed. </p>
+            
+            
+<p class="kissick">
+<b>DK:</b> <br>You spoke earlier about being influenced by many different genres.
+            </p>
+<p class="lopatin">           
+<b>OPN:</b> <br> So, this album to me is really the definitive index of my musical interests as a fan. [Daniel describes different songs on the record and their many influences in great detail, finally arriving at “Long Road Home.”] For me, it’s like I’m conflating Scritti Politti with Enya. That was an alchemical connection there. That makes a lot of sense with my tastes, my love of keyboards and weird MIDI-driven arrangements that you can only make on a computer, that were never possible to play—
+            </p>
+
+            <p class="kissick">
+<b>DK:</b> <br> I noticed Enya when I came in [there’s a picture of Enya on top of one of Lopatin’s kitchen cabinets]. </p>
+            <p class="lopatin">
+<b>OPN:</b> <br> Yeah, I love her. There’s a sort of a stratum. There’s a Philip K. Dick quote that I love that I’ve been thinking about pretty much for the last year, which is, I’m going to paraphrase, but it’s, “Elements of the divine can be located on the trash stratum” [“The symbols of the divine initially show up at the trash stratum”].
+
+And for me, what he’s saying there is that if you remain enchanted with the world, then pretty much, whether you’re in the gutter or wherever you are, however bad the smell is, it’s going to be really interesting because you’re alive, because you’re there to bear witness. </p>
+
+            <p class="kissick">
+                <b>DK:</b> <br>Well, I agree with Philip K. Dick there.</p>
+            <p class="lopatin">
+<b>OPN:</b> <br>
+                I really do. I think disenchantment is really the story of the twentieth century, and there are all kinds of reasons for it. Re-enchantment is the project for a lot of artists, for a lot of people that are trying to transform or to have a kind of modicum of contentment in their life. It means finding a way of being enchanted. And there’s so many ways to veer off course, and so many distractions. So there’s a lot of trash on the record I guess. There’s debris, radio debris and messy stuff. And elements of background music and Muzak and “beautiful music” [an old genre of background music that was played on the radio]. As I was saying, I sampled the Weather Channel a lot. I found a website that basically had a repository of every single piece of music to have been played on the Weather Channel. So that was interesting. There are a lot of weird layers to it. There’s a lot of layers to the trash.</p>
+<p class="kissick">
+    <b>DK:</b> <br>Magic Oneohtrix Point Never is a project of re-enchantment.</p>
+            <p class="lopatin">
+<b>OPN:</b> <br>I hope so. If magic accomplishes anything, as a funny trick to play on somebody, it’s to make them suddenly feel very uncertain about what they know to be true. And I think that’s enchantment. That’s something I needed. That’s been my concern musically since the beginning. It’s the only reason I do it.
+And there’s also a funny thing that my shrink pointed out to me. I started doing analysis for the first time in my life at age thirty-eight, with a Jungian therapist. And the funny thing about the analysis was his reading of my band name. He says there’s “tricks” in there. Then he says, “Yeah, there’s tricks in there.”
+
+Because it’s ones and zeros, it’s computer binary, and it’s tricks, that I play around with computers to make music that’s impossible to make otherwise. And he says, “Well, I think you have a trickster thing happening. There’s a trickster archetype at play in your stuff. And the trickster is a very effective point of view to embody as a young person. But it becomes increasingly difficult to remain a trickster, or understand how that integrates, in middle age.” </p>
+
+            <p class=kissick>
+<b>DK:</b><br> I wrote down a quote from you from an interview in 2015. You said, “I think I do all this cool shit. But to the average celebrity I’m at best a magician or clown.”
+            </p>
+  <p class="lopatin">          
+<b>OPN:</b> <br> Yes. I think the trickster part is very important. The clown thing is when I’m really falling apart, when I’m having a negative view of myself. But they’re part and parcel of the same thing, which is that I really do like to entertain. I feel like I fail when it’s not immediately intoxicating. It’s the way that music was for me, when I didn’t know how it was made, and I just listened; it needs to have that kind of intoxication; that makes me an entertainer.
+        </p>
+            </div>
+        <center>
+            <br>
+            <br>
+        <a href="#div3">See Gallery!</a>
+            </center>
+    <div class="footer"><p>Visuals: Courtesy and © Robert Beatty. Text: "Slanted and Re-enchanted: Magic Oneohtrix Point Never" by <b>DK:</b> via Flash Art</p></div>
+    </div>
+    
+    
+    
+    <div id="div3">
+    
+        
+        <div id="gallery">
+            
+           <!-- <div class="scroll-container">
+  <img src="2.png" alt="Cinque Terre" height="100%">
+                
+                <a href="#img2">></a>
+  <img src="2384453_cf46d.gif" alt="Forest" height="100%">
+  <img src="3.png" alt="Northern Lights" height="100%">
+  <img src="cursor.cur" alt="Mountains" height="100%">
+</div>-->
+            
+            <iframe class="noBorder" src="gallery.html" width="100%" height="100%"></iframe>
+        
+        </div>
+        
+    <center>
+         <br>
+         <br>
+    <a href="#div2">Go Back!</a>
+        </center>
+        
+         <div class="footer"><p>Visuals: Courtesy and © Robert Beatty. Text: "Slanted and Re-enchanted: Magic Oneohtrix Point Never" by <b>DK:</b> via Flash Art</p></div>
+    </div>
+  
+    
+    
+    <div id="div4"></div>
+    
+    
+</body>
+
+</html>
